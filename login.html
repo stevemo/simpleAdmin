@@ -21,9 +21,10 @@
 	
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 	
-	<!-- CSS: implied media=all -->
-	<!-- CSS concatenated and minified via ant build script-->
+
+	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/login.css">
 	<!-- end CSS-->
 	
 	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -31,46 +32,52 @@
 	<!-- All JavaScript at the bottom, except for Modernizr / Respond.
 	   Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
 	   For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	<script src="assets/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 
 <body>
 
 	<div id="top-bar">
-		<a href="##" title="Return to website">Return to website</a>
+		<div class="page-full-width">
+			<a href="##" class="button round dark image-left ic-left-arrow" title="Return to website">Return to website</a>
+		</div>
 	</div> <!-- end of top-bar -->
 	
-	<div id="header">
-	
-		<div id="login-intro">
-			<hgroup>
-				<h1>Login to this site</h1>
-				<h2>Enter your credentials below</h2>
-			</hgroup>
-		</div> <!-- end of login-intro -->
-		
-		<a href="##"><img src="assets/company-logo.png" alt="Company Logo" id="company-logo" /></a>
-	
+	<div id="header" class="clearfix">
+		<div class="page-full-width">
+			<div id="login-intro" class="fl">
+				<hgroup>
+					<h1 class="text-upper">Login to this site</h1>
+					<h2>Enter your credentials below</h2>
+				</hgroup>
+			</div> <!-- end of login-intro -->
+			
+			<a href="##" class="fr" id="company-logo">
+				<img src="http://placehold.it/130X56" alt="Company Logo" width="130" height="56"/>
+			</a>
+		</div> <!-- end of page-full-width -->
 	</div><!-- end of header -->
 	
 	<div id="content">
-		<fieldset>
-			<p>
-				<label for="login-email">Email</label>
-				<input type="text" id="login-email" name="login-email" tabindex="1" />
-			</p>
-			<p>
-				<label for="login-password">Password</label>
-				<input type="password" id="login-password" name="login-password" tabindex="2" />
-			</p>
-			<p>I've <a href="##">Lost my password</a>.</p>
-			<input type="submit" name="login-submit" id="login-submit" value="Log In" tabindex="3" />
-		</fieldset>	
+		<form action="##" id="login-form">
+			<fieldset>
+				<p>
+					<label for="login-email">Email</label>
+					<input type="text" id="login-email" name="login-email" class="round full-width" autofocus tabindex="1" />
+				</p>
+				<p>
+					<label for="login-password">Password</label>
+					<input type="password" id="login-password" name="login-password" class="round full-width" tabindex="2" />
+				</p>
+				<p>I've <a href="##">Lost my password</a>.</p>
+				<input type="submit" name="login-submit" id="login-submit" class="button round blue image-right ic-right-arrow text-upper" value="Log In" tabindex="3" />
+			</fieldset>			
+		</form>
 	</div> <!-- end of content -->
 	
 	<div id="footer">
-		<p>&copy; Copyright 2012 <a href="http://stevemo.ca">Stevemo</a>. All rights reserved.</p>
-		<p><strong>SimpleAdmin</strong> theme by <a href="http://stevemo.ca">Stevemo</a></p>
+		<p>&copy; Copyright 2012 <a href="#">Your Name</a>. All rights reserved.</p>
+		<p><strong>SimpleAdmin</strong> theme by <a href="#">Your Name</a></p>
 	</div> <!-- end of footer -->
 
 
