@@ -1,0 +1,41 @@
+/* ========================================================== */
+/* ! ---------------------- login page---------------------   */
+/* ========================================================== */
+
+
+/* top bar & header */
+div#top-bar {
+	background-color: #2a2e36;
+	padding: 0.625em 0; /* 10/16 */
+}
+div#header {
+	padding: 1.25em 0; /* 20/16 */
+}
+div#login-intro {
+	background: transparent url(../img/icons/lock-icon.png) no-repeat left center;
+	padding: 0.625em 0 0.625em 3.125em;
+}
+div#login-intro h1 {
+	font-size: 1.25em;
+}
+div#login-intro h2 {
+	font-size: 0.875em;
+}
+/* content */
+div#content {
+	background: #f8f9fa url("../img/artwork-bg.png") repeat-x left bottom;
+	padding: 1.875em; /* 30/16 */
+	border: 1px solid #eeefef;
+}
+
+/* login form  */
+form#login-form {
+	width: 18.75em; /* 300/16 */
+	margin: 0 auto;
+}
+
+/* footer */
+div#footer {
+	padding: 1.875em 0; /* 30/16 */
+	text-align: center;
+}
